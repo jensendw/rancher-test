@@ -1,10 +1,10 @@
-dantest-${ENVIRONMENT}:
+dantest-$ENVIRONMENT:
   scale: 1
   tty: false
   upgrade_strategy:
     start_first: true
     batch_size: 1
   labels:
-    io.rancher.scheduler.affinity:host_label: asg_name=rancher-analytics-${ENVIRONMENT}
+    io.rancher.scheduler.affinity:host_label: asg_name=rancher-analytics-$ENVIRONMENT
   image: ubuntu 
 
